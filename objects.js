@@ -101,3 +101,43 @@ function myObjectSwitch(num) {
 }
 
 console.log(myObjectSwitch("europe"))
+
+/**
+ * function to check if an object has some properties. 
+ */
+
+var myObject = {
+    23: "My school",
+    33: "Our school",
+    12: "Their school"
+}
+
+function checkOut(val) {
+    if (myObject.hasOwnProperty(val)) {
+        return myObject[val]
+    } else {
+        return "Has not the property"
+    }
+}
+
+console.log(checkOut(2))
+
+/**
+ * Accessing nested objects
+ */
+
+var myStorage = {
+    "car": {
+        "insider": {
+            "glove box": "maps",
+            "passenger seat": "crumbs"
+        },
+        "outside": {
+            "trunk": "jack"
+        }
+    }
+}
+
+var gloveBox = myStorage.car.insider["glove box"]
+
+console.log(gloveBox)
