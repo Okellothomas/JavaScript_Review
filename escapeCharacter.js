@@ -21,3 +21,37 @@ console.log(escapeOne)
  */
 
 stringOne = "Sure kanga is my school!"
+stringTwo = " And JKUAT too. "
+
+finalString = stringOne + stringTwo;
+
+console.log(finalString)
+
+stringTwo += stringOne
+
+console.log(stringTwo)
+
+
+/**
+ * the .length method, and the bracket notation method. 
+ */
+
+stringLength = stringOne.length 
+console.log(stringLength)
+
+stringPositionOne = stringOne[stringLength - 2]
+console.log(stringPositionOne)
+console.log(stringOne[0])
+
+
+/**
+ * Function introduction
+ */
+
+function Sentence(first, second, third, forth, fifth) {
+    var result = ""
+    result += "These " + " " +first + " " + second + " " + third + " " + forth + " " + fifth
+    return result
+}
+
+console.log(Sentence(3,4,5,6,7))

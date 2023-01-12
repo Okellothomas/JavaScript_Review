@@ -22,9 +22,9 @@ divNumbers = 66 / div
 
 // output the variables values
 
-alert(name)
+// alert(name)
 console.log(school)
-alert(age)
+// alert(age)
 console.log(divNumbers)
 
 
