@@ -58,3 +58,46 @@ School.High = "Kakamega"
 School["Primary"] = "Paw Ndege "
 
 console.log(School)
+
+/**
+ * Adding more properties to the object
+ */
+
+School.Academy = "Dala"
+School["University"] = "Jkuat"
+
+console.log(School)
+
+/**
+ * Use the delete method to remove object properties
+ */
+
+delete School.Academy
+delete School.High
+
+console.log(School)
+
+/**
+ * Using objects instead of switch statements. 
+ */
+
+
+function myObjectSwitch(num) {
+    
+    var result = ""
+
+    var lookups = {
+        "africa": "Kenya", 
+        "america": "USA",
+        "antantica": "Russia",
+        "australia": "Australia",
+        "asia": "China",
+        "europe": "United Kingdom"
+    }
+
+    result = lookups[num]
+
+    return result
+}
+
+console.log(myObjectSwitch("europe"))
