@@ -245,8 +245,106 @@ function caseInSwitch(val) {
         case 4: return answer[3]
             break
         default: return answer[4]
+            break
+        
     }
 
 }
 
-console.log(caseInSwitch(2))
+console.log(caseInSwitch(1))
+
+
+/**
+ * Switch statement that allow for multiple instances of cases
+ */
+
+function secondSwitch(num) {
+    var degrees = ["low", "moderate", "high"]
+
+    switch (num) {
+        case 1:
+        case 2:
+        case 3:
+            return degrees[0]
+            break
+        case 4:
+        case 5:
+        case 6:
+            return degrees[1]
+            break
+        case 7:
+        case 8:
+        case 9:
+            return degrees[2]
+            break
+        default:
+            return "invalid output"
+            break
+        
+    }
+}
+
+console.log(secondSwitch(6))
+
+/**
+ * We seek to change an if else statement to a switch statement
+ */
+
+
+function chainToSwitch(val) {
+    var answer = ["Marly", "The Answer", "There is no #1", "Missed me by this much", "Ate Nine", "Invalid Input"]
+
+    switch (val) {
+        case "bob":
+            return answer[0]
+            break
+        case 42:
+            return answer[1]
+            break
+        case 1:
+            return answer[2]
+            break
+        case 99:
+            return answer[3]
+            break
+        case 7:
+            return answer[4]
+            break
+        default:
+            return answer[5]
+            break
+        
+    }
+}
+
+console.log(chainToSwitch(8929))
+
+/**
+ * The card challange
+ */
+
+var count = 0
+
+function cc(card) {
+    switch (card) {
+        case 2:
+            return count += 2
+            break
+        case 3:
+            return count += 3
+            break
+        case 'K':
+            return count--
+            break
+        case 7:
+            return count += 7
+            break
+        case 'A':
+            return count--
+            break
+        default: 
+            return "Invalid intput"
+    }
+}
+
+console.log(cc(2))
