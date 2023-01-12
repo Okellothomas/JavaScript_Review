@@ -348,3 +348,40 @@ function cc(card) {
 }
 
 console.log(cc(2))
+
+
+// the bet issues
+
+function dd(num) {
+    switch (num) {
+        case 2:
+        case 3:
+        case 4:
+        case 5:
+        case 6:
+            count++
+            break
+        case 10:
+        case "J":
+        case "Q":
+        case "A":
+            count--
+            break
+        default:
+            "Invalid input"
+            break
+        
+    }
+
+    var betNow = "hold"
+
+    if (count > 0) {
+        betNow = "bet"
+    }
+
+    return count + " " + betNow
+}
+
+dd(2), dd(5), dd(3), dd("A"), dd(10)
+
+console.log(dd(2))
