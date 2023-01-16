@@ -50,3 +50,27 @@ function oneTwo(min, max) {
 var result = oneTwo(1, 5)
 
 console.log(result)
+
+/**
+ * String interger conversion using the parseIn
+ */
+
+function myConversion(str) {
+    var convert = parseInt(str)
+    return convert
+}
+
+console.log(myConversion("1893"))
+
+/**
+ * Using string conversion with radix
+ */
+
+function mySecondConversion(str) {
+    var radix = parseInt(str, 2)
+    return radix
+}
+
+var myradix = mySecondConversion("100")
+
+console.log(myradix)
