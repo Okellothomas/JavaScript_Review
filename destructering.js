@@ -64,3 +64,19 @@ function getMinOfTdy(myForecast) {
 }
 
 console.log(getMinOfTdy(LOCAL_FORECAST))
+
+/**
+ * Array distructering
+ */
+
+// const [p, w, ,v] = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+// console.log(p, w, v)
+
+let a = 8, b = 6
+
+    (() => {
+        "use strict"
+        [a,b] = [b,a]
+    })()
+console.log(a,b)
