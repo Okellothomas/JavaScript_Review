@@ -150,3 +150,43 @@ var product = multiplyAll([[1, 2], [3, 5, 6], [3, 5, 6, 7, 8, 8]])
 
 
 console.log(product)
+
+/**
+ * The do while loop;
+ */
+
+var myArray = []
+
+var i = 0
+
+do {
+    myArray.push(i)
+    i++
+} while (i <= 7)
+
+console.log(myArray)
+
+
+/**
+ * a do while loop to add the elements of an array
+ */
+
+
+var myArray = [39, 10, 21]
+
+var total = 0
+
+var i = 0
+
+do {
+    total += myArray[i]
+    i++
+} while (i < myArray.length)
+
+
+console.log(total)
+
+
+/**
+ * Coding challange two
+ */
