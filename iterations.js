@@ -77,3 +77,76 @@ for (i = 2; i <= 20; i+=2){
 
 console.log(myEven)
 
+/**
+ * While and for back ward iterations. 
+ */
+
+var myArray = []
+
+var i = 100
+
+while (i > 0) {
+    myArray.push(i)
+    i-=10
+}
+
+console.log(myArray)
+
+
+var myArray = []
+
+for (i = 1000; i >= 0; i -= 100){
+    myArray.push(i)
+}
+
+console.log(myArray)
+
+
+/**
+ * Iterating through an array
+ */
+
+
+var myArray = [10, 20, 10, 12, 20]
+var total = 0
+var i = 0
+while (i < myArray.length) {
+    total += myArray[i]
+    i++
+}
+console.log(total)
+
+/**
+ * we do the same for the forloop
+ */
+
+var myTotal = 0
+for (i = 0; i < myArray.length; i++){
+    myTotal += myArray[i]
+}
+
+console.log(myTotal)
+
+
+/**
+ * Implementing multiple iterations
+ */
+
+function multiplyAll(arr) {
+    var product = 1;
+
+    //we implement the multiple iteration here
+
+    for (i = 0; i < arr.length; i++){
+        for (j = 0; j < arr[i].length; j++){
+            product *= arr[i][j]
+        }
+    }
+
+    return product;
+}
+
+var product = multiplyAll([[1, 2], [3, 5, 6], [3, 5, 6, 7, 8, 8]])
+
+
+console.log(product)
