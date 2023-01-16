@@ -190,3 +190,84 @@ console.log(total)
 /**
  * Coding challange two
  */
+
+var contacts = [
+    {
+        "firstName": "Akira",
+        "lastName": "Laine",
+        "number": "0791919192",
+        "likes": ["Pizza","Coding","Arsenal"]
+    },
+    {
+        "firstName": "Akira",
+        "lastName": "Laine",
+        "number": "0791919192",
+        "likes": ["Pizza","Coding","Arsenal"]
+    },
+    {
+        "firstName": "Akira",
+        "lastName": "Laine",
+        "number": "0791919192",
+        "likes": ["Pizza","Coding","Arsenal"]
+    },
+    {
+        "firstName": "Akira",
+        "lastName": "Laine",
+        "number": "0791919192",
+        "likes": ["Pizza","Coding","Arsenal"]
+    },
+    {
+        "firstName": "Akira",
+        "lastName": "Laine",
+        "number": "0791919192",
+        "likes": ["Pizza","Coding","Arsenal"]
+    },
+    {
+        "firstName": "Akira",
+        "lastName": "Laine",
+        "number": "0791919192",
+        "likes": ["Pizza","Coding","Arsenal"]
+    }
+
+]
+
+function lookUpProfile(name, prop) {
+    // we implement the do while loop
+    var i = 0
+    do {
+        if (contacts[i].firstName === name) {
+            return contacts[i][prop] || "No such property"
+        }
+        i++
+    } while (i < contacts.length)
+    
+    /**
+     * Same implementation using the while loop
+     */
+
+    /*
+
+    var i = 0
+
+    while(i < contacts.length){
+    if(contacts[i].firstName === name){
+    return contacts[i][prop] || "No such property"
+    }
+    i++
+    }
+
+    Using the for loop
+
+    for(i = 0; i < contacts.length; i++){
+    if(contacts[i].firstName === name){
+    return contacts[i][prop] || "No such property"
+    }
+    }
+
+    */
+}
+
+var data = lookUpProfile("Akira", "likes");
+
+
+console.log(data)
