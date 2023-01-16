@@ -54,4 +54,8 @@ function Sentence(first, second, third, forth, fifth) {
     return result
 }
 
-console.log(Sentence(3,4,5,6,7))
+console.log(Sentence(3, 4, 5, 6, 7))
+
+/**
+ * Using arrays for storing of 
+ */

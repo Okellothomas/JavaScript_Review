@@ -141,3 +141,97 @@ var myStorage = {
 var gloveBox = myStorage.car.insider["glove box"]
 
 console.log(gloveBox)
+
+/**
+ * Accessing elements of nested arrays
+ */
+
+var myPlants = [
+    {
+        type: "flowers",
+        list: [
+            "rose",
+            "tulip",
+            "dandelion"
+        ]
+    },
+    {
+        type: "trees",
+        list: [
+            "fir",
+            "pine",
+            "birch"
+        ]
+    }
+]
+
+var secondTree = myPlants[1].list[1]
+
+console.log(secondTree)
+
+
+/**
+ * updating complex array
+ */
+
+var collection = {
+    "1234": {
+        "album": "Slippery when wet",
+        "artist": "Bon Jovi",
+        "tracks": [
+            "let it rock",
+            "You give love a bad name"
+        ]
+    },
+    "3334": {
+        "album": "Slippery when wet",
+        "artist": "Bon Jovi",
+        "tracks": [
+            "let it rock",
+            "You give love a bad name"
+        ]
+    },
+    "2234": {
+        "album": "Slippery when wet",
+        "artist": "Bon Jovi",
+        "tracks": [
+            "let it rock",
+            "You give love a bad name"
+        ]
+    },
+    "4134": {
+        "album": "Slippery when wet",
+        "artist": "Bon Jovi",
+        "tracks": [
+            "let it rock",
+            "You give love a bad name"
+        ]
+    }
+}
+
+// keep a copy of the collection for tests
+
+var collectionCopy = JSON.parse(JSON.stringify(collection))
+
+// Only change code below this line
+
+function updateRecords(id, prop, value) {
+
+    // we write the if else condition for changing the data
+    if (value === "") {
+        delete collection[id][prop]
+    } else if (prop === "tracks") {
+        collection[id][prop] = collection[id][prop] || []
+        collection[id][prop].push(value)
+    } else {
+        collection[id][prop] = value
+    }
+    
+    return collection
+}
+
+/**
+ * The final output
+ */
+
+updateRecords(3334, "artist", "ABBA")
