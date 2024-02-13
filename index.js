@@ -129,3 +129,8 @@ console.log(Number("0o11"))
 console.log(Number("foo"))
 console.log(Number("100a"))
 console.log(Number("-Infinity"))
+
+
+/**
+ * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number 
+ */
